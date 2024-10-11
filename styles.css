@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #1b1f23;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #0a0c10;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #00b7ff;
+  }
+  
+  #hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-bg.jpg') no-repeat center center/cover;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 180px;
+    margin-bottom: 30px;
+  }
+  #contact {
+    background-color: #0a0c10;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00b7ff;
+  }
+  
+  #contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ddd;
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .contact-link {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .contact-link i {
+    font-size: 1.5rem;
+  }
+  
+  .contact-link:hover {
+    background-color: #ff6f61;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 111, 97, 0.7);
+  }
+  
+  .contact-link i:hover {
+    color: #00b7ff;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    color: #00b7ff;
+  }
+  
+  .highlight {
+    color: #ff6f61;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e55642;
+  }
+  
+  #about, #skills, #projects, #contact {
+    padding: 100px 20px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00b7ff;
+  }
+  
+  .skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-item h3 {
+    margin-bottom: 15px;
+  }
+  
+  .progress-bar {
+    background-color: #555;
+    border-radius: 30px;
+    height: 10px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #00b7ff;
+    height: 100%;
+    transition: width 0.6s ease;
+  }
+  
+  .project-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  footer {
+    background-color: #0a0c10;
+    color: #777;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
